@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="card.js"></script>
+    <script>
+        card({
+            sections: [
+                {
+                    type: 'h1',
+                    content: "Hi!"
+                },
+                {
+                    type: 'paragraph',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore magnam eaque aspernatur tenetur reiciendis mollitia modi! Animi officiis quaerat maxime maiores? Harum cum vitae iste. Magni, quos inventore? Molestiae, doloremque!'
+                },
+                {
+                    type: 'image',
+                    content: 'https://placekitten.com/1920/1080'
+                },
+                {
+                    type: 'h2',
+                    content: 'This is a cat.'
+                },
+                {
+                    type: 'button',
+                    content: "My discord server!",
+                    buttonType: "url",
+                    buttonURL: "https://discord.gg/azalea-essentials"
+                }
+            ]
+        }, el => { document.body.appendChild(el) })
+    </script>
+</body>
+
+</html>
